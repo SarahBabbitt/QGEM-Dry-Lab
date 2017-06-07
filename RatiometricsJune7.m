@@ -13,8 +13,8 @@ AFP8RBSStrengths = numdata(1:10, 2);
 SpyTagRBSStrengths = numdata(1:10, 3);
 
 %User inputs 
-X1 = 1;  %ratio amount of AFP8
-X2 = 5;  %ratio amount of SpyTag
+X1 = 1;  %ratio amount of AFP8 protein
+X2 = 5;  %ratio amount of SpyTag protein
 endRatio = X1/X2;
 
 %indeces 
