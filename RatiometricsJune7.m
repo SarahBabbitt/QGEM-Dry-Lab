@@ -25,6 +25,8 @@ j = 1;  %P2 anderson index of strengths
 k = 1;  %R1 AFP8 RBS index of ti rates
 m = 1;  %R2 SpyTag RBS index of ti rates 
 
+Truth = 1;
+
 %calculated, to be iterated, amounts of each protein
 A = 0;  %AFP8 protein
 B = 0;  %SpyTag protein
@@ -83,7 +85,7 @@ for i = 1:length(AndersonPromoterStrengths);
                                 fprintf("The user input ratio of %2.2f or %2.2f has been achieved with P1 = %2.2f, AFP8 RBS strength of %2.2f, P2 = %2.2f, and SpyTag RBS strength of %2.2f. \n", endRatio, ratio, P1, R1, P2, R2)
                                 break 
                             else
-                                Truth = 0;
+                                Truth == 0;
                             end
                         end
                     end
