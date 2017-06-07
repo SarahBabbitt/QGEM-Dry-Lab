@@ -8,13 +8,15 @@ numdata(:);
 %a 1D array of Anderson promoter strengths (from excel) (relative units) 
 AndersonPromoterStrengths = numdata(1:end, 1);
 %a 1D array of AFP8 RBS strengths (from calculator) (10 fold) 
-AFP8RBSStrengths = numdata(1:10, 2);
+AFP8RBSStrengths = numdata(1:9, 2);
 %a 1D array of SpyTag RBS strengths (from calculator) (10 fold)
-SpyTagRBSStrengths = numdata(1:10, 3);
+SpyTagRBSStrengths = numdata(1:9, 3);
 
 %User inputs 
-X1 = 1;  %ratio amount of AFP8 protein
-X2 = 5;  %ratio amount of SpyTag protein
+prompt = 'What is the ratio amount of AFP8 protein desired? \n';
+X1 = input(prompt);  %ratio amount of AFP8 proteins
+prompt = 'What is the ratio amount of SpyTag protein desired? \n';
+X2 = input(prompt);
 endRatio = X1/X2;
 
 %indeces 
