@@ -1,6 +1,5 @@
 clear all; clc; 
-% create a character vector by enclosing a sequence of characters with
-% single quotation marks 
+% Anderson Promoter Collection
 BBa_J23119 = 'ttgacagctagctcagtcctaggtataatgctagc';
 BBa_J23100 = 'ttgacggctagctcagtcctaggtacagtgctagc';
 BBa_J23101 = 'tttacagctagctcagtcctaggtattatgctagc';
@@ -87,7 +86,7 @@ for i = 1:4
     end
 end
 
-consensus = PWM(BBa_J23100);
+consensus = PWM(BBa_J23101);
 relativeRPU = PWM(BBa_J23103)/consensus
 
         
