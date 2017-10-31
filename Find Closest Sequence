@@ -1,0 +1,28 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Sep 12 17:49:30 2017
+
+@author: Sarah
+"""
+
+Ahat = []
+Bhat = []
+for index in range(0,len(rB)):
+    Ahat.append(rA[index][0]*promoterStrengths[index])
+    Bhat.append(rB[index][0]*promoterStrengths[index])
+
+besti = 0
+bestj = 0
+currDiff = 100000000
+
+for i in range(0,len(rB)):
+    for j in range(0,len(rB)):
+        diff = abs(ratio - Bhat[j]/Ahat[i])
+        if diff < currDiff:
+            besti = i
+            bestj = j
+            currDiff = diff
+
+print "Achieved Ratio: " + "{}".format(Bhat[bestj]/Ahat[besti])
+print "Code A: " + rA[besti][1]
+print "Code B: " + rB[bestj][1]
