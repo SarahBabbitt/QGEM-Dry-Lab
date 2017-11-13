@@ -8,9 +8,9 @@ import numpy as np
 
 import random, sys, string, requests, json, hmac, hashlib, datetime, math, time, traceback
 
-publicConsumerToken = 'hzl8uif7o3'
-privateConsumerToken = 'o384wco2l0612m0gmt481ka57t'
-url = 'https://api.denovodna.com/'
+publicConsumerToken = 
+privateConsumerToken = 
+url = 
 
 import urllib3
 import certifi
